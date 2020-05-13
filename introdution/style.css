@@ -1,0 +1,38 @@
+.logo{
+	background-color: #666;
+    background-image: url("logo.png");
+    margin-bottom: 10px; 
+    max-width:100%;
+    height:445px;
+}
+.nav_container{
+	background: 	#BEBEBE;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #000;
+}
+nav ul{
+	list-style: none;
+	margin: 0;
+}
+nav li{
+	padding: 10px 20px;
+	float: left;
+}
+body{
+	margin:20px;
+	background:#FFFF6F;
+}
+
+.container{
+	background: #0080FF;
+	width: 60%;
+	height: 100px;
+	float: left;
+	margin: 10px 0;
+}
+
+.title{
+	font-size: 20px;
+}

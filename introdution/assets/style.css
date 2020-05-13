@@ -1,0 +1,233 @@
+.logo{
+background-color: #666;
+background-image: url("../images/logo.png");
+margin-bottom: 10px;
+max-width:100%;
+height:445px;
+}
+.nav_container{
+background: 	#BEBEBE;
+display: flex;
+justify-content: center;
+align-items: center;
+color: #000;
+
+}
+nav ul{
+list-style: none;
+margin: 0;
+}
+nav li{
+padding: 10px 20px;
+float: left;
+}
+body{
+margin:20px;
+background:	#FFFF93;
+font-family: 標楷體;
+}
+.container{
+background:	#ACD6FF	;
+width: 60%;
+float: left;
+margin: 10px 0;
+display: flex;
+align-items:center;
+justify-content: center;
+flex-direction: column;
+border-radius: 50px;
+padding: 20px;
+}
+.container .my{
+max-width: 45%;
+height: auto;
+padding: 20px;
+}
+.title{
+font-size: 40px;
+padding: 0 20px;
+font-family: Mamelon, 標楷體;
+}
+@font-face {
+font-family: Mamelon;
+src: url("assets/Mamelon.otf");
+}
+.school{
+width: 100%;
+margin: 10px 0;
+display: flex;
+align-items:center;
+justify-content: center;
+flex-direction: row;
+}
+.icon img{
+max-height: 200px;
+width: : auto;
+padding: 10px 20px;
+}
+.icon{
+display: flex;
+flex-direction: column;
+align-items: center;
+font-family: 標楷體;
+}
+.container span{
+	font-size: 20px;
+	padding: 10px 0 0 0;
+	text-align: center;
+}
+aside
+
+{    position: absolute;
+  top: 550px;
+  right: 0;
+  width: 460px;
+  background-color:#ACD6FF;
+  margin-right: 20px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+.p1
+{
+ display: inline-block;
+ padding-left: 175px;
+}
+.p2
+{
+ display: inline-block;
+}
+.c1
+{ 
+  font-size: 40px;
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 標楷體;
+  padding-top: 20px;
+}
+.line
+{
+	width: 100%;
+    height: 1px;
+    border-top: solid #ACC0D8 3px;
+    border-radius: 20px;
+
+
+}
+.slider_container div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.slider_container div {
+    -webkit-animation: round 18s linear infinite;
+            animation: round 18s linear infinite;
+}
+
+@-webkit-keyframes round {
+    5.55555556% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        /* 0 - 1秒 淡入*/
+    }
+    16.6666667% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        /* 1- 5秒靜止*/
+    }
+    22.2222222% {
+        opacity: 0;
+        filter: alpha(opacity=0);
+        /* 5-6秒淡出*/
+    }
+}
+@keyframes round {
+    5.55555556% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        /* 0 - 1秒 淡入*/
+    }
+    16.6666667% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        /* 1- 5秒靜止*/
+    }
+    22.2222222% {
+        opacity: 0;
+        filter: alpha(opacity=0);
+        /* 5-6秒淡出*/
+    }
+}
+.slider_container div:nth-child(1) {
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+}
+
+.slider_container div:nth-child(2) {
+    -webkit-animation-delay: 3s;
+            animation-delay: 3s;
+}
+
+.slider_container div:nth-child(3) {
+    -webkit-animation-delay: 6s;
+            animation-delay: 6s;
+}
+
+.slider_container div:nth-child(4) {
+    -webkit-animation-delay: 9s;
+            animation-delay: 9s;
+}
+
+.slider_container div:nth-child(5) {
+    -webkit-animation-delay: 12s;
+            animation-delay: 12s;
+}
+.slider_container div:nth-child(6) {
+    -webkit-animation-delay: 15s;
+            animation-delay: 15s;
+}
+.slider_container span {    
+    color: #000;
+    background: #fff;
+    position: absolute;
+    left: 0%;
+    top: 280px;
+    width: 400px;
+    height: 100px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 100px;
+    -webkit-transform:scaleY(0);
+        -ms-transform:scaleY(0);
+            transform:scaleY(0);
+    -webkit-transition: all 0.5s ease-in-out;
+            transition: all 0.5s ease-in-out;
+}
+
+.slider_container:hover span {
+    width: 100%;
+    -webkit-transform:scaleY(1);
+        -ms-transform:scaleY(1);
+            transform:scaleY(1);
+}
+.slider_container:hover div {
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
+}
+.maximage{
+	max-width: 250px;
+}
+.footer{
+	text-align: center;
+	padding-top:20px; 
+	padding bottom: 5px;
+	position: relative;
+	width: 100%;
+	font-size: 25px;
+	background-color: gray;
+	overflow:hidden;
+	height: 50px;
+	border-radius: 20px;
+}
