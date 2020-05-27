@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title></title>
+		<link rel="stylesheet" href="">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<style>@import url("assets/css/index.css");</style>
+	</head>
+	<body>
+		<div class = "outside">
+			<div class = "inside">
+				<div class = "border">
+					<div class = "title">
+						<span class="name">洪育嘉</span>
+						<span>『關關難過關關過』</span>
+					</div>
+					<div class = "area">
+						<div class = "left">
+							<div class = "class">
+								<span>中原大學-資訊管理學系</span>
+							</div>
+							<div class= "content">
+								<span class = "block_title">
+									個人資訊
+								</span>
+								<button class = "btn" onclick="location.href='https://asgard0110.github.io/introdution/index.html'"><span>個人網頁</span></button>
+								<div class = "info">
+									<ol>
+										<li>生日:2000/01/10</li>
+										<li>系級:資管二乙</li>
+										<li>電話:0909759215</li>
+										<li>e-mail:a0920718568@gmail.com</li>
+									</ol>
+								</div>
+							</div>
+							<div class = "content">
+								<span class = "block_title">
+									程式技能
+								</span>
+								<div class = "skill_container">
+									<div class="skillbox">
+										<p>Html</p>
+										<p>60%</p>
+										<div class="skill">
+											<div class="skill_level html" ></div>
+										</div>
+									</div>
+									<div class="skillbox">
+										<p>Java</p>
+										<p>65%</p>
+										<div class="skill">
+											<div class="skill_level java" ></div>
+										</div>
+									</div>
+									<div class="skillbox">
+										<p>Python</p>
+										<p>30%</p>
+										<div class="skill">
+											<div class="skill_level python" ></div>
+										</div>
+									</div>
+									<div class="skillbox">
+										<p>C#</p>
+										<p>70%</p>
+										<div class="skill">
+											<div class="skill_level c" ></div>
+										</div>
+									</div>
+									<div class="skillbox">
+										<p>CSS</p>
+										<p>50%</p>
+										<div class="skill">
+											<div class="skill_level css"></div>
+										</div>
+									</div>
+									<div class="skillbox">
+										<p>JSP</p>
+										<p>50%</p>
+										<div class="skill">
+											<div class="skill_level jsp"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class = "right">
+							<div class= "content" style = "padding: 20px 0;">
+								<span class = "block_title" >
+									大學經歷
+								</span>
+								<div class = "word">
+									<p class= "word_title">大學一年級-上學期</p>
+									<p class ="word_content">管理學-中原大學附幼兒園志工</p>
+									<p class= "word_title">大學一年級-下學期</p>
+									<p class ="word_content">企業概論-天使蛋糕義賣</p>
+									<p class= "word_title">大學二年級-上學期</p>
+									<p class ="word_content">網頁後端程式設計-各式茶類</p>
+									<p class= "word_title">大學二年級-下學期</p>
+									<p class ="word_content">多媒體期中專案-推廣教育中心介紹</p>
+								</div>
+							</div>
+							<div class = "content">
+								<span class = "block_title" >
+									聯絡資訊
+								</span>
+								<div class = "icons">
+									<a href="https://www.facebook.com/profile.php?id=100002553887926"><img src="assets/images/fb1.png" alt=""></a>
+									<a href="https://www.instagram.com/chia_0110"><img src="assets/images/ig.png" alt=""></a>
+									<a href="mailto:a0920718568@gmail.com"><img src="assets/images/email.png" alt=""></a>
+								</div>
+							</div>
+							<div class = "content fade">
+								<img src = "assets/images/me.jpg" class = "pic">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<script>
+			$(window).on("load",function() {
+  $(window).scroll(function() {
+    var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+    $(".fade").each(function() {
+      /* Check the location of each desired element */
+      var objectBottom = $(this).offset().top + $(this).outerHeight();
+      
+      /* If the element is completely within bounds of the window, fade it in */
+      if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+        if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
+      } else { //object goes out of view (scrolling up)
+        if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
+      }
+    });
+  }).scroll(); //invoke scroll-handler on page-load
+});
+			</script>
+		</body>
+	</html>
